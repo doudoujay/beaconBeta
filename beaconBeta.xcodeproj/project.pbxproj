@@ -9,10 +9,27 @@
 /* Begin PBXBuildFile section */
 		692DA9B41A7F993B00ABA804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DA9B31A7F993B00ABA804 /* AppDelegate.swift */; };
 		692DA9B61A7F993B00ABA804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DA9B51A7F993B00ABA804 /* ViewController.swift */; };
-		692DA9B91A7F993B00ABA804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692DA9B71A7F993B00ABA804 /* Main.storyboard */; };
 		692DA9BB1A7F993B00ABA804 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692DA9BA1A7F993B00ABA804 /* Images.xcassets */; };
 		692DA9BE1A7F993B00ABA804 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692DA9BC1A7F993B00ABA804 /* LaunchScreen.xib */; };
 		692DA9CA1A7F993B00ABA804 /* beaconBetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DA9C91A7F993B00ABA804 /* beaconBetaTests.swift */; };
+		694B53501A848E980053F9A5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694B534F1A848E980053F9A5 /* Security.framework */; };
+		694B53521A848E9E0053F9A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694B53511A848E9E0053F9A5 /* QuartzCore.framework */; };
+		694B53541A848EA50053F9A5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 694B53531A848EA50053F9A5 /* libicucore.dylib */; };
+		694B53561A848EB80053F9A5 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694B53551A848EB80053F9A5 /* AVOSCloud.framework */; };
+		695E07D61A887F56008C682C /* BeaconDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E07D51A887F56008C682C /* BeaconDetail.swift */; };
+		6977D24F1A8096C800419642 /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6977D24E1A8096C800419642 /* libEstimoteSDK.a */; };
+		69D8946D1A7F9FD8001B8ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D8946C1A7F9FD8001B8ADD /* Foundation.framework */; };
+		69D8946F1A7F9FDD001B8ADD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D8946E1A7F9FDD001B8ADD /* CoreLocation.framework */; };
+		69D894711A7F9FE2001B8ADD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D894701A7F9FE2001B8ADD /* CoreBluetooth.framework */; };
+		69D894751A7FA015001B8ADD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D894741A7FA015001B8ADD /* CloudKit.framework */; };
+		69D894771A7FBE95001B8ADD /* MyBeacons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D894761A7FBE95001B8ADD /* MyBeacons.swift */; };
+		69D894791A7FBECD001B8ADD /* BeaconTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D894781A7FBECD001B8ADD /* BeaconTest.swift */; };
+		69D9B8141A835D5C00245702 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D9B8131A835D5C00245702 /* CoreData.framework */; };
+		69D9B8171A83617600245702 /* beaconSourceData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69D9B8151A83617600245702 /* beaconSourceData.xcdatamodeld */; };
+		69EDFB221A81ED050037AB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EDFB201A81ED050037AB35 /* Main.storyboard */; };
+		69EE6F741A80A0EB003C85CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EE6F731A80A0EB003C85CE /* SystemConfiguration.framework */; };
+		69EE6F761A80A0F1003C85CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EE6F751A80A0F1003C85CE /* CoreGraphics.framework */; };
+		69EE6F781A80A0F6003C85CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EE6F771A80A0F6003C85CE /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +47,54 @@
 		692DA9B21A7F993B00ABA804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		692DA9B31A7F993B00ABA804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		692DA9B51A7F993B00ABA804 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		692DA9B81A7F993B00ABA804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		692DA9BA1A7F993B00ABA804 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		692DA9BD1A7F993B00ABA804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		692DA9C31A7F993B00ABA804 /* beaconBetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beaconBetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		692DA9C81A7F993B00ABA804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		692DA9C91A7F993B00ABA804 /* beaconBetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beaconBetaTests.swift; sourceTree = "<group>"; };
+		694B534F1A848E980053F9A5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		694B53511A848E9E0053F9A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		694B53531A848EA50053F9A5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		694B53551A848EB80053F9A5 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = "../../Desktop/Projects/avoscloud-ios-sdk-v2-2/SNS/release-v2.6.9.1/AVOSCloud.framework"; sourceTree = "<group>"; };
+		695E07D51A887F56008C682C /* BeaconDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconDetail.swift; sourceTree = "<group>"; };
+		6977D2371A8096C800419642 /* ESTBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeacon.h; sourceTree = "<group>"; };
+		6977D2381A8096C800419642 /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconDefinitions.h; sourceTree = "<group>"; };
+		6977D2391A8096C800419642 /* ESTBeaconFirmwareVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconFirmwareVO.h; sourceTree = "<group>"; };
+		6977D23A1A8096C800419642 /* ESTBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconManager.h; sourceTree = "<group>"; };
+		6977D23B1A8096C800419642 /* ESTBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconRegion.h; sourceTree = "<group>"; };
+		6977D23C1A8096C800419642 /* ESTBeaconUpdateConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconUpdateConfig.h; sourceTree = "<group>"; };
+		6977D23D1A8096C800419642 /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
+		6977D23E1A8096C800419642 /* ESTBeaconVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconVO.h; sourceTree = "<group>"; };
+		6977D23F1A8096C800419642 /* ESTBulkUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBulkUpdater.h; sourceTree = "<group>"; };
+		6977D2401A8096C800419642 /* ESTConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTConfig.h; sourceTree = "<group>"; };
+		6977D2411A8096C800419642 /* ESTDateRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTDateRule.h; sourceTree = "<group>"; };
+		6977D2421A8096C800419642 /* ESTDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTDefinitions.h; sourceTree = "<group>"; };
+		6977D2431A8096C800419642 /* ESTFirmwareInfoVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTFirmwareInfoVO.h; sourceTree = "<group>"; };
+		6977D2441A8096C800419642 /* ESTMotionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTMotionRule.h; sourceTree = "<group>"; };
+		6977D2451A8096C800419642 /* ESTNearable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTNearable.h; sourceTree = "<group>"; };
+		6977D2461A8096C800419642 /* ESTNearableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTNearableManager.h; sourceTree = "<group>"; };
+		6977D2471A8096C800419642 /* ESTNearableRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTNearableRule.h; sourceTree = "<group>"; };
+		6977D2481A8096C800419642 /* ESTOrientationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTOrientationRule.h; sourceTree = "<group>"; };
+		6977D2491A8096C800419642 /* ESTProximityRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTProximityRule.h; sourceTree = "<group>"; };
+		6977D24A1A8096C800419642 /* ESTRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTRule.h; sourceTree = "<group>"; };
+		6977D24B1A8096C800419642 /* ESTTemperatureRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTTemperatureRule.h; sourceTree = "<group>"; };
+		6977D24C1A8096C800419642 /* ESTTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTTrigger.h; sourceTree = "<group>"; };
+		6977D24D1A8096C800419642 /* ESTTriggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTTriggerManager.h; sourceTree = "<group>"; };
+		6977D24E1A8096C800419642 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
+		6977D2501A8096D400419642 /* beaconBeta-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "beaconBeta-Bridging-Header.h"; sourceTree = "<group>"; };
+		69D8946C1A7F9FD8001B8ADD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		69D8946E1A7F9FDD001B8ADD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		69D894701A7F9FE2001B8ADD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		69D894731A7F9FF8001B8ADD /* beaconBeta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = beaconBeta.entitlements; sourceTree = "<group>"; };
+		69D894741A7FA015001B8ADD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		69D894761A7FBE95001B8ADD /* MyBeacons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBeacons.swift; sourceTree = "<group>"; };
+		69D894781A7FBECD001B8ADD /* BeaconTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTest.swift; sourceTree = "<group>"; };
+		69D9B8131A835D5C00245702 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		69D9B8161A83617600245702 /* beaconSourceData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = beaconSourceData.xcdatamodel; sourceTree = "<group>"; };
+		69EDFB211A81ED050037AB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69EE6F731A80A0EB003C85CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		69EE6F751A80A0F1003C85CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		69EE6F771A80A0F6003C85CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +102,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694B53541A848EA50053F9A5 /* libicucore.dylib in Frameworks */,
+				694B53521A848E9E0053F9A5 /* QuartzCore.framework in Frameworks */,
+				694B53501A848E980053F9A5 /* Security.framework in Frameworks */,
+				69EE6F761A80A0F1003C85CE /* CoreGraphics.framework in Frameworks */,
+				69D9B8141A835D5C00245702 /* CoreData.framework in Frameworks */,
+				694B53561A848EB80053F9A5 /* AVOSCloud.framework in Frameworks */,
+				69D8946D1A7F9FD8001B8ADD /* Foundation.framework in Frameworks */,
+				69EE6F781A80A0F6003C85CE /* UIKit.framework in Frameworks */,
+				69EE6F741A80A0EB003C85CE /* SystemConfiguration.framework in Frameworks */,
+				69D894711A7F9FE2001B8ADD /* CoreBluetooth.framework in Frameworks */,
+				69D894751A7FA015001B8ADD /* CloudKit.framework in Frameworks */,
+				69D8946F1A7F9FDD001B8ADD /* CoreLocation.framework in Frameworks */,
+				6977D24F1A8096C800419642 /* libEstimoteSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +131,8 @@
 		692DA9A51A7F993B00ABA804 = {
 			isa = PBXGroup;
 			children = (
+				6977D2351A8096C800419642 /* EstimoteSDK */,
+				69D894721A7F9FE9001B8ADD /* Frameworks */,
 				692DA9B01A7F993B00ABA804 /* beaconBeta */,
 				692DA9C61A7F993B00ABA804 /* beaconBetaTests */,
 				692DA9AF1A7F993B00ABA804 /* Products */,
@@ -77,12 +151,18 @@
 		692DA9B01A7F993B00ABA804 /* beaconBeta */ = {
 			isa = PBXGroup;
 			children = (
+				69D894731A7F9FF8001B8ADD /* beaconBeta.entitlements */,
 				692DA9B31A7F993B00ABA804 /* AppDelegate.swift */,
+				69D9B8151A83617600245702 /* beaconSourceData.xcdatamodeld */,
 				692DA9B51A7F993B00ABA804 /* ViewController.swift */,
-				692DA9B71A7F993B00ABA804 /* Main.storyboard */,
+				69D894761A7FBE95001B8ADD /* MyBeacons.swift */,
+				69EDFB201A81ED050037AB35 /* Main.storyboard */,
+				695E07D51A887F56008C682C /* BeaconDetail.swift */,
+				69D894781A7FBECD001B8ADD /* BeaconTest.swift */,
 				692DA9BA1A7F993B00ABA804 /* Images.xcassets */,
 				692DA9BC1A7F993B00ABA804 /* LaunchScreen.xib */,
 				692DA9B11A7F993B00ABA804 /* Supporting Files */,
+				6977D2501A8096D400419642 /* beaconBeta-Bridging-Header.h */,
 			);
 			path = beaconBeta;
 			sourceTree = "<group>";
@@ -110,6 +190,65 @@
 				692DA9C81A7F993B00ABA804 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6977D2351A8096C800419642 /* EstimoteSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6977D2361A8096C800419642 /* Headers */,
+				6977D24E1A8096C800419642 /* libEstimoteSDK.a */,
+			);
+			name = EstimoteSDK;
+			path = "../estimote-sdk/EstimoteSDK";
+			sourceTree = "<group>";
+		};
+		6977D2361A8096C800419642 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6977D2371A8096C800419642 /* ESTBeacon.h */,
+				6977D2381A8096C800419642 /* ESTBeaconDefinitions.h */,
+				6977D2391A8096C800419642 /* ESTBeaconFirmwareVO.h */,
+				6977D23A1A8096C800419642 /* ESTBeaconManager.h */,
+				6977D23B1A8096C800419642 /* ESTBeaconRegion.h */,
+				6977D23C1A8096C800419642 /* ESTBeaconUpdateConfig.h */,
+				6977D23D1A8096C800419642 /* ESTBeaconUpdateInfo.h */,
+				6977D23E1A8096C800419642 /* ESTBeaconVO.h */,
+				6977D23F1A8096C800419642 /* ESTBulkUpdater.h */,
+				6977D2401A8096C800419642 /* ESTConfig.h */,
+				6977D2411A8096C800419642 /* ESTDateRule.h */,
+				6977D2421A8096C800419642 /* ESTDefinitions.h */,
+				6977D2431A8096C800419642 /* ESTFirmwareInfoVO.h */,
+				6977D2441A8096C800419642 /* ESTMotionRule.h */,
+				6977D2451A8096C800419642 /* ESTNearable.h */,
+				6977D2461A8096C800419642 /* ESTNearableManager.h */,
+				6977D2471A8096C800419642 /* ESTNearableRule.h */,
+				6977D2481A8096C800419642 /* ESTOrientationRule.h */,
+				6977D2491A8096C800419642 /* ESTProximityRule.h */,
+				6977D24A1A8096C800419642 /* ESTRule.h */,
+				6977D24B1A8096C800419642 /* ESTTemperatureRule.h */,
+				6977D24C1A8096C800419642 /* ESTTrigger.h */,
+				6977D24D1A8096C800419642 /* ESTTriggerManager.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		69D894721A7F9FE9001B8ADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				694B53551A848EB80053F9A5 /* AVOSCloud.framework */,
+				694B53531A848EA50053F9A5 /* libicucore.dylib */,
+				694B53511A848E9E0053F9A5 /* QuartzCore.framework */,
+				694B534F1A848E980053F9A5 /* Security.framework */,
+				69D9B8131A835D5C00245702 /* CoreData.framework */,
+				69EE6F771A80A0F6003C85CE /* UIKit.framework */,
+				69EE6F751A80A0F1003C85CE /* CoreGraphics.framework */,
+				69EE6F731A80A0EB003C85CE /* SystemConfiguration.framework */,
+				69D894741A7FA015001B8ADD /* CloudKit.framework */,
+				69D894701A7F9FE2001B8ADD /* CoreBluetooth.framework */,
+				69D8946E1A7F9FDD001B8ADD /* CoreLocation.framework */,
+				69D8946C1A7F9FD8001B8ADD /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +300,12 @@
 				TargetAttributes = {
 					692DA9AD1A7F993B00ABA804 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 455TUBYXEF;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					692DA9C21A7F993B00ABA804 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -192,7 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				692DA9B91A7F993B00ABA804 /* Main.storyboard in Resources */,
+				69EDFB221A81ED050037AB35 /* Main.storyboard in Resources */,
 				692DA9BE1A7F993B00ABA804 /* LaunchScreen.xib in Resources */,
 				692DA9BB1A7F993B00ABA804 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +357,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695E07D61A887F56008C682C /* BeaconDetail.swift in Sources */,
 				692DA9B61A7F993B00ABA804 /* ViewController.swift in Sources */,
+				69D894771A7FBE95001B8ADD /* MyBeacons.swift in Sources */,
 				692DA9B41A7F993B00ABA804 /* AppDelegate.swift in Sources */,
+				69D894791A7FBECD001B8ADD /* BeaconTest.swift in Sources */,
+				69D9B8171A83617600245702 /* beaconSourceData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,20 +385,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		692DA9B71A7F993B00ABA804 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				692DA9B81A7F993B00ABA804 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		692DA9BC1A7F993B00ABA804 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				692DA9BD1A7F993B00ABA804 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		69EDFB201A81ED050037AB35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69EDFB211A81ED050037AB35 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +485,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = beaconBeta/beaconBeta.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jay/Desktop/Projects/avoscloud-ios-sdk-v2-2/SNS/release-v2.6.9.1",
+				);
 				INFOPLIST_FILE = beaconBeta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jay/ios_dev/estimote-sdk/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "beaconBeta/beaconBeta-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +510,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = beaconBeta/beaconBeta.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jay/Desktop/Projects/avoscloud-ios-sdk-v2-2/SNS/release-v2.6.9.1",
+				);
 				INFOPLIST_FILE = beaconBeta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jay/ios_dev/estimote-sdk/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "beaconBeta/beaconBeta-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +583,7 @@
 				692DA9CF1A7F993B00ABA804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		692DA9D01A7F993B00ABA804 /* Build configuration list for PBXNativeTarget "beaconBetaTests" */ = {
 			isa = XCConfigurationList;
@@ -413,8 +592,22 @@
 				692DA9D21A7F993B00ABA804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69D9B8151A83617600245702 /* beaconSourceData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69D9B8161A83617600245702 /* beaconSourceData.xcdatamodel */,
+			);
+			currentVersion = 69D9B8161A83617600245702 /* beaconSourceData.xcdatamodel */;
+			path = beaconSourceData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 692DA9A61A7F993B00ABA804 /* Project object */;
 }

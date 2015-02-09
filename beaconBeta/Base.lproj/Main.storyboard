@@ -23,19 +23,9 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
-                                    <rect key="frame" x="91" y="51" width="219" height="129"/>
+                                    <rect key="frame" x="91" y="41" width="219" height="129"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mp-dA-Z8g">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="我的Beacons"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="178" width="168" height="34"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="G5o-ki-ALw" kind="push" identifier="BeaconSearch" id="Vxh-Ht-fl2"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zR3-5f-Yen">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,23 +59,33 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="300" width="400" height="300"/>
+                                    <rect key="frame" x="0.0" y="126" width="400" height="412"/>
                                 </variation>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mp-dA-Z8g">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="我的Beacons"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="558" width="168" height="34"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="G5o-ki-ALw" kind="push" identifier="BeaconSearch" id="Vxh-Ht-fl2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="WUq-gF-E96"/>
-                                <exclude reference="0mp-dA-Z8g"/>
                                 <exclude reference="zR3-5f-Yen"/>
+                                <exclude reference="0mp-dA-Z8g"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="WUq-gF-E96"/>
-                                <include reference="0mp-dA-Z8g"/>
                                 <include reference="zR3-5f-Yen"/>
+                                <include reference="0mp-dA-Z8g"/>
                             </mask>
                         </variation>
                     </view>
@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="1321.5" y="86"/>
         </scene>
-        <!--Beacon Detail-->
+        <!--beaconDetail-->
         <scene sceneID="9qX-CB-VKr">
             <objects>
-                <viewController id="YFb-aG-swj" customClass="BeaconDetail" customModule="beaconBeta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="beaconDetail" id="YFb-aG-swj" customClass="BeaconDetail" customModule="beaconBeta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k7E-rc-v07"/>
                         <viewControllerLayoutGuide type="bottom" id="Bwh-y2-4cn"/>
@@ -267,7 +267,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入数字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gi-gO-Xzp">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="176" y="340" width="97" height="30"/>
                                 </variation>
@@ -317,31 +317,17 @@
                                     <rect key="frame" x="73" y="418" width="255" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试次数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aj-4E-WX5">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="155" y="456" width="68" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2l-7j-93S">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="235" y="456" width="10" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4x-m4-7ba">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4h-Oq-hrm">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="开始测试！"/>
+                                <state key="normal" title="开始测试">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                    <rect key="frame" x="163" y="510" width="75" height="30"/>
+                                    <rect key="frame" x="177" y="477" width="60" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="U5E-4l-DOe" kind="show" id="bC0-B7-51x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -363,9 +349,7 @@
                                 <exclude reference="6VJ-Sg-P3X"/>
                                 <exclude reference="FgL-NC-PKR"/>
                                 <exclude reference="keC-A4-PyI"/>
-                                <exclude reference="1aj-4E-WX5"/>
-                                <exclude reference="X2l-7j-93S"/>
-                                <exclude reference="Y4x-m4-7ba"/>
+                                <exclude reference="A4h-Oq-hrm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -386,25 +370,117 @@
                                 <include reference="6VJ-Sg-P3X"/>
                                 <include reference="FgL-NC-PKR"/>
                                 <include reference="keC-A4-PyI"/>
-                                <include reference="1aj-4E-WX5"/>
-                                <include reference="X2l-7j-93S"/>
-                                <include reference="Y4x-m4-7ba"/>
+                                <include reference="A4h-Oq-hrm"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Wcl-PO-D2D"/>
+                    <navigationItem key="navigationItem" title="Beacon详细信息" id="Wcl-PO-D2D"/>
                     <connections>
                         <outlet property="beaconDistance" destination="i2b-DU-vvo" id="aFM-fg-Rvn"/>
                         <outlet property="beaconMajor" destination="PdP-Ta-vHU" id="GyG-7q-9PQ"/>
                         <outlet property="beaconMinor" destination="zgC-U9-DAS" id="SIr-jU-MVc"/>
                         <outlet property="beaconRSSI" destination="cRa-Ip-5Hf" id="XcW-Nq-P9Q"/>
                         <outlet property="beaconUUID" destination="RbQ-KH-Lvw" id="58b-OZ-PXl"/>
-                        <outlet property="testTime" destination="X2l-7j-93S" id="n1T-oB-K1y"/>
+                        <outlet property="testDistance" destination="6gi-gO-Xzp" id="KtC-bA-7a0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gc0-cg-jwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2230.5" y="67"/>
+        </scene>
+        <!--beaconTest-->
+        <scene sceneID="7if-Uv-Zye">
+            <objects>
+                <viewController title="beaconTest" id="U5E-4l-DOe" customClass="BeaconTest" customModule="beaconBeta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v5s-T0-t63"/>
+                        <viewControllerLayoutGuide type="bottom" id="p1K-VS-8WD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yhu-lt-EWZ">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试次数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwC-qj-cUS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="95" y="121" width="68" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试次数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxb-v7-PjP">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="238" y="121" width="68" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实时距离" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7a-5V-EM1">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="95" y="159" width="68" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实时距离" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h1-go-FIt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="238" y="159" width="68" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平均距离" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9F2-YM-Mjx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="95" y="198" width="68" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平均距离" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x69-6h-2s6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="238" y="198" width="68" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZwC-qj-cUS"/>
+                                <exclude reference="mxb-v7-PjP"/>
+                                <exclude reference="M7a-5V-EM1"/>
+                                <exclude reference="8h1-go-FIt"/>
+                                <exclude reference="9F2-YM-Mjx"/>
+                                <exclude reference="x69-6h-2s6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZwC-qj-cUS"/>
+                                <include reference="mxb-v7-PjP"/>
+                                <include reference="M7a-5V-EM1"/>
+                                <include reference="8h1-go-FIt"/>
+                                <include reference="9F2-YM-Mjx"/>
+                                <include reference="x69-6h-2s6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="测试信息" id="5nH-QB-0OV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YPI-b3-Kzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3070.5" y="67"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="iKz-aa-BDg">

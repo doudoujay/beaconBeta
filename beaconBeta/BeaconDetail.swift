@@ -8,13 +8,15 @@
 import Foundation
 import UIKit
 
-class BeaconDetail: UIViewController {
+class BeaconDetail: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var beaconUUID: UILabel!
     @IBOutlet weak var beaconMajor: UILabel!
     @IBOutlet weak var beaconMinor: UILabel!
     @IBOutlet weak var beaconRSSI: UILabel!
     @IBOutlet weak var beaconDistance: UILabel!
-    @IBOutlet weak var testTime: UILabel!
+    @IBOutlet weak var testDistance: UITextField!
+
+    
     
     //BeaconData
     var DataSource:AppDelegate!
@@ -23,6 +25,7 @@ class BeaconDetail: UIViewController {
     var BeaconSingle: ESTBeacon!
     override func viewDidLoad() {
         super.viewDidLoad()
+        testDistance.delegate = self
         println("Index:\(beaconIndex)")
         //初始化界面
         beaconUUID.text = beaconData[beaconIndex].proximityUUID.UUIDString
@@ -48,5 +51,9 @@ class BeaconDetail: UIViewController {
         beaconMajor.text = tempData.major.stringValue
         beaconMinor.text = tempData.minor.stringValue
     }
-    
+    //键盘事件处理
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false;
+    }
 }

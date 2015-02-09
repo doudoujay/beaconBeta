@@ -8,9 +8,14 @@
 
 import Foundation
 import UIKit
-import CoreLocation
-import CoreBluetooth
-class BeaconTest: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+
+class BeaconTest: UIViewController {
+    override func loadView() {
+        super.loadView()
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }

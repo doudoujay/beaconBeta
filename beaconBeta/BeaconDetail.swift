@@ -56,4 +56,10 @@ class BeaconDetail: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false;
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "runTest"){
+            var testVC = segue.destinationViewController as BeaconTest
+            testVC.beaconIndex = self.beaconIndex
+        }
+    }
 }

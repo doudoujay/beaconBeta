@@ -18,6 +18,7 @@
 		694B53561A848EB80053F9A5 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694B53551A848EB80053F9A5 /* AVOSCloud.framework */; };
 		695E07D61A887F56008C682C /* BeaconDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E07D51A887F56008C682C /* BeaconDetail.swift */; };
 		6977D24F1A8096C800419642 /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6977D24E1A8096C800419642 /* libEstimoteSDK.a */; };
+		698E86491A89D5CE00B35528 /* coreAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E86481A89D5CE00B35528 /* coreAlgorithm.swift */; };
 		69D8946D1A7F9FD8001B8ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D8946C1A7F9FD8001B8ADD /* Foundation.framework */; };
 		69D8946F1A7F9FDD001B8ADD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D8946E1A7F9FDD001B8ADD /* CoreLocation.framework */; };
 		69D894711A7F9FE2001B8ADD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D894701A7F9FE2001B8ADD /* CoreBluetooth.framework */; };
@@ -82,6 +83,7 @@
 		6977D24D1A8096C800419642 /* ESTTriggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTTriggerManager.h; sourceTree = "<group>"; };
 		6977D24E1A8096C800419642 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
 		6977D2501A8096D400419642 /* beaconBeta-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "beaconBeta-Bridging-Header.h"; sourceTree = "<group>"; };
+		698E86481A89D5CE00B35528 /* coreAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coreAlgorithm.swift; sourceTree = "<group>"; };
 		69D8946C1A7F9FD8001B8ADD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69D8946E1A7F9FDD001B8ADD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		69D894701A7F9FE2001B8ADD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -156,6 +158,7 @@
 				69D9B8151A83617600245702 /* beaconSourceData.xcdatamodeld */,
 				692DA9B51A7F993B00ABA804 /* ViewController.swift */,
 				69D894761A7FBE95001B8ADD /* MyBeacons.swift */,
+				698E86481A89D5CE00B35528 /* coreAlgorithm.swift */,
 				69EDFB201A81ED050037AB35 /* Main.storyboard */,
 				695E07D51A887F56008C682C /* BeaconDetail.swift */,
 				69D894781A7FBECD001B8ADD /* BeaconTest.swift */,
@@ -363,6 +366,7 @@
 				692DA9B41A7F993B00ABA804 /* AppDelegate.swift in Sources */,
 				69D894791A7FBECD001B8ADD /* BeaconTest.swift in Sources */,
 				69D9B8171A83617600245702 /* beaconSourceData.xcdatamodeld in Sources */,
+				698E86491A89D5CE00B35528 /* coreAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

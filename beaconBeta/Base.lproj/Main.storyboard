@@ -26,50 +26,24 @@
                                     <rect key="frame" x="91" y="41" width="219" height="129"/>
                                 </variation>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zR3-5f-Yen">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="BriefViewCell" selectionStyle="default" indentationWidth="10" textLabel="zna-jh-9CV" detailTextLabel="Ara-uG-JDC" style="IBUITableViewCellStyleSubtitle" id="Tpm-qA-U1l">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tpm-qA-U1l" id="GRB-7E-XQD">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zna-jh-9CV">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="widthClass=compact">
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    </variation>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ara-uG-JDC">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="widthClass=compact">
-                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    </variation>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="126" width="400" height="412"/>
-                                </variation>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mp-dA-Z8g">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="我的Beacons"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="558" width="168" height="34"/>
+                                    <rect key="frame" x="38" y="515" width="168" height="34"/>
                                 </variation>
                                 <connections>
                                     <segue destination="G5o-ki-ALw" kind="push" identifier="BeaconSearch" id="Vxh-Ht-fl2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIc-ji-y7E">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Beacon基站"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="195" y="515" width="168" height="34"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="8Cz-uj-Kav" kind="show" identifier="emitBeacon" id="QsP-kc-rnH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,22 +51,19 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="WUq-gF-E96"/>
-                                <exclude reference="zR3-5f-Yen"/>
                                 <exclude reference="0mp-dA-Z8g"/>
+                                <exclude reference="BIc-ji-y7E"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="WUq-gF-E96"/>
-                                <include reference="zR3-5f-Yen"/>
                                 <include reference="0mp-dA-Z8g"/>
+                                <include reference="BIc-ji-y7E"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="BeaconLab" id="187-7S-mF3"/>
-                    <connections>
-                        <outlet property="tableView" destination="zR3-5f-Yen" id="QJr-dq-sy6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wam-xc-Vrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,6 +143,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Bwh-y2-4cn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UCA-Aq-zDt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UUID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1d-uC-h7h">
@@ -326,7 +298,7 @@
                                     <rect key="frame" x="177" y="477" width="60" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="U5E-4l-DOe" kind="show" id="bC0-B7-51x"/>
+                                    <segue destination="U5E-4l-DOe" kind="show" identifier="runTest" id="bC0-B7-51x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -397,6 +369,7 @@
                         <viewControllerLayoutGuide type="bottom" id="p1K-VS-8WD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yhu-lt-EWZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试次数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwC-qj-cUS">
@@ -477,6 +450,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="测试信息" id="5nH-QB-0OV"/>
+                    <connections>
+                        <outlet property="avgDistance" destination="x69-6h-2s6" id="ahY-cX-8ad"/>
+                        <outlet property="liveDistance" destination="8h1-go-FIt" id="gV6-dx-hOf"/>
+                        <outlet property="testTimes" destination="mxb-v7-PjP" id="49e-Fi-zXp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPI-b3-Kzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -538,6 +516,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Beacon基站" id="WGn-Bf-Rvo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3c-oc-yHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,10 +18,10 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate {
     var BeaconData:[ESTBeacon]!
     var dataSource:AppDelegate!
     //    var AVOSBeaconData:AVObject!
-    @IBOutlet weak var tableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        var timer = NSTimer(timeInterval: 0.5, target: self, selector: "update", userInfo: nil, repeats: true)
+//        var timer = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -30,9 +30,7 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate {
         super.loadView()
         dataSource = UIApplication.sharedApplication().delegate as AppDelegate
         
-        //tableview的管理
-        //        self.tableView.delegate = self
-        //        self.tableView.dataSource = self
+
         LManeger.delegate = self
         if(CLLocationManager.authorizationStatus() != CLAuthorizationStatus.Authorized){
             LManeger.requestWhenInUseAuthorization()
@@ -61,28 +59,5 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate {
     func beaconManager(manager: ESTBeaconManager!, didStartMonitoringForRegion region: ESTBeaconRegion!) {
         self.LManeger.startRangingBeaconsInRegion(self.region)
     }
-    //    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    //        if(dataSource.BeaconData! != []){
-    //            return dataSource.BeaconData!.count as Int
-    //        }
-    //        else{
-    //            return 0
-    //        }
-    //
-    //    }
-    //    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    //        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("BriefViewCell") as UITableViewCell
-    //        var singleBeacon = dataSource.BeaconData[indexPath.row] as ESTBeacon
-    //        if (singleBeacon != ESTBeacon()){
-    //        cell.textLabel?.text = singleBeacon.proximityUUID.UUIDString
-    //        cell.detailTextLabel?.text = "Major:\(singleBeacon.major), Minor:\(singleBeacon.minor)"}
-    //        else{
-    //            cell.textLabel?.text = "Wait"
-    //            cell.detailTextLabel?.text = "Wait"
-    //        }
-    //        return cell
-    //    }
-    func update(){
-        self.tableView.reloadData()
-    }
+ 
 }

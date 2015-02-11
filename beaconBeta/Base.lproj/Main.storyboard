@@ -236,7 +236,7 @@
                                     <rect key="frame" x="211" y="80" width="173" height="52"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入数字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gi-gO-Xzp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入整数" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gi-gO-Xzp">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -353,6 +353,7 @@
                         <outlet property="beaconMinor" destination="zgC-U9-DAS" id="SIr-jU-MVc"/>
                         <outlet property="beaconRSSI" destination="cRa-Ip-5Hf" id="XcW-Nq-P9Q"/>
                         <outlet property="beaconUUID" destination="RbQ-KH-Lvw" id="58b-OZ-PXl"/>
+                        <outlet property="buttonEnable" destination="A4h-Oq-hrm" id="BCl-ZQ-0CF"/>
                         <outlet property="testDistance" destination="6gi-gO-Xzp" id="KtC-bA-7a0"/>
                     </connections>
                 </viewController>

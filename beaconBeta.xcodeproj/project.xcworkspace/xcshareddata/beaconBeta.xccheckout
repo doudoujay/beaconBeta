@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6CCB585858000804BB16202076224C1AB1B84311</key>
-		<string>../../../../../estimote-sdk</string>
+		<string>../../../estimote-sdk</string>
 		<key>9F685482CD44B225EB2A4E676222082173D6601E</key>
 		<string>../../..</string>
 	</dict>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C65F1525-5878-4131-9BEB-15F22D316B12</string>
+	<key>IDESourceControlProjectName</key>
+	<string>beaconBeta</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6CCB585858000804BB16202076224C1AB1B84311</key>
+		<string>https://github.com/Estimote/iOS-SDK.git</string>
+		<key>9F685482CD44B225EB2A4E676222082173D6601E</key>
+		<string>https://github.com/doudoujay/beaconBeta.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>beaconBeta.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6CCB585858000804BB16202076224C1AB1B84311</key>
+		<string>../../estimote-sdk</string>
+		<key>9F685482CD44B225EB2A4E676222082173D6601E</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/doudoujay/beaconBeta.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9F685482CD44B225EB2A4E676222082173D6601E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9F685482CD44B225EB2A4E676222082173D6601E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>beaconBeta-backup</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6CCB585858000804BB16202076224C1AB1B84311</string>
+			<key>IDESourceControlWCCName</key>
+			<string>estimote-sdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

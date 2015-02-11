@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CIDR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libicucore.dylib">
+      <sourceFolder url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libicucore.dylib" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/../estimote-sdk/EstimoteSDK">
+      <sourceFolder url="file://$MODULE_DIR$/../estimote-sdk/EstimoteSDK" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -31,8 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate{
         // Override point for customization after application launch.
         
         //Init AVOS
-        //        AVOSCloud.setApplicationId("ljjj607s88efliqeer0wqy595y433ycfoxu96huwe70kxdkq", clientKey: "oi3gtl53bwqe9b115zpgukl9uxwkvu45r03vltx1kzj13vhj")
-        //        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        AVOSCloud.setApplicationId("ljjj607s88efliqeer0wqy595y433ycfoxu96huwe70kxdkq", clientKey: "oi3gtl53bwqe9b115zpgukl9uxwkvu45r03vltx1kzj13vhj")
+        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         LManeger.delegate = self
         if(CLLocationManager.authorizationStatus() != CLAuthorizationStatus.Authorized){
             LManeger.requestWhenInUseAuthorization()

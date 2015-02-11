@@ -3,3 +3,4 @@
 //
 
 #import "ESTBeaconManager.h"
+#import <AVOSCloud/AVOSCloud.h>

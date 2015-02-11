@@ -16,6 +16,7 @@ class BeaconDetail: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var beaconDistance: UILabel!
     @IBOutlet weak var testDistance: UITextField!
 
+    @IBOutlet weak var buttonEnable: UIButton!
     
     
     //BeaconData
@@ -34,7 +35,8 @@ class BeaconDetail: UIViewController, UITextFieldDelegate {
         beaconRSSI.text = String(beaconData[beaconIndex].rssi)
         beaconDistance.text = "\(beaconData[beaconIndex].distance.stringValue)米"
         var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
-        
+        testDistance.delegate = self
+        buttonEnable.enabled = false
     }
     override func loadView() {
         super.loadView()
@@ -58,8 +60,21 @@ class BeaconDetail: UIViewController, UITextFieldDelegate {
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "runTest"){
+            var distance:Float = (testDistance.text as NSString).floatValue
             var testVC = segue.destinationViewController as BeaconTest
             testVC.beaconIndex = self.beaconIndex
+            testVC.testDistance = distance
+            
         }
+    }
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let text = (testDistance.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        if let intVal = text.toInt() {
+            buttonEnable.enabled = true
+        }
+        else{
+            buttonEnable.enabled = false
+        }
+        return true
     }
 }

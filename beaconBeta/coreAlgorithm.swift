@@ -22,11 +22,17 @@ class coreAlgorithm {
         println(testTimes)
     }
     //Distance
-    func DistanceAvg(array:NSArray) -> Int{
-        var temp:Int
-        // Need to work on!
-        return 0
+    func DistanceAvg() ->Float{
+        var temp:Float = 0.0
+        for tempDistance in beaconDistance{
+            temp += Float(tempDistance)
         }
+        var times = Float(beaconDistance.count)
+        var avg = temp/times
+        // Need to work on!
+        return avg
+        }
+
     
     func DistanceMax() -> Int{
         return 0

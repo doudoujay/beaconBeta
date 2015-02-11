@@ -15,7 +15,9 @@ class BeaconTest: UIViewController {
     @IBOutlet weak var avgDistance: UILabel!
     
     var beaconIndex:Int = 0
+    var testDistance:Float = 0.0
     var beaconData:[ESTBeacon]!
+    var timer: NSTimer!
     //核心算法
     var algorithm = coreAlgorithm()
     override func loadView() {
@@ -31,12 +33,17 @@ class BeaconTest: UIViewController {
         }
         
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    override func viewWillDisappear(animated: Bool) {
+        timer.invalidate()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+        println("The test distance is\(testDistance)")
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
     }
     func update(){
         //保持数据1秒一次更新
@@ -47,5 +54,13 @@ class BeaconTest: UIViewController {
         //更新界面
         testTimes.text = String(algorithm.testTimes)
         liveDistance.text = beacon.distance.stringValue
+        avgDistance.text = "\(algorithm.DistanceAvg())米"
+        //AVOStest
+        var AVOSBeacon:AVObject = AVObject(className: "BeaconData")
+        AVOSBeacon["test"] = beacon.distance.stringValue
+        AVOSBeacon.save()
+        
+        
+        
     }
 }
